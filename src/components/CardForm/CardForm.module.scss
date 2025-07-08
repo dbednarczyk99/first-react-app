@@ -1,0 +1,16 @@
+@import '../../styles/settings.scss';
+
+    .cardForm {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        input {
+            width: 100%;
+            min-width: 100px;
+        }
+        button {
+            //width: 100%;
+            min-width: 95px;
+            margin-right: 0;
+        }
+    }
