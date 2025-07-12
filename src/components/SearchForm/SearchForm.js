@@ -3,14 +3,15 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { getSearchWord } from '../../redux/store';
 
 const SearchForm = () => {
 
     const [searchWord, setSearchWord] = useState('');
         const handleSubmit = e => {
             e.preventDefault();
-            //const columnId = props.columnId;
-            dispatch({ type: 'SET_SEARCH_WORD', payload: { searchWord } });
+            console.log('Search word:', searchWord);
+            dispatch(getSearchWord(searchWord));
             setSearchWord('');
         };
 
