@@ -5,7 +5,7 @@ const About = () => {
     return (
       <div className={styles.heroAbout}>
         <PageTitle>About</PageTitle>
-        <p className={styles.subtitle}>Lorem ipsum dolor sit amet.</p>
+        <p className={styles.subtitle}></p>
       </div>
     );
   };

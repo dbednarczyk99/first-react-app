@@ -11,3 +11,21 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+.icon {
+    color: black;
+}
+
+.favorite {
+    color: $color-golden;
+}
+
+.favoriteButton {
+    border: none;
+    background-color: transparent;
+    height: auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
