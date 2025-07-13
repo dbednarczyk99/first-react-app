@@ -2,13 +2,11 @@ import styles from './Column.module.scss';
 import Card from '../Card/Card';
 import CardForm from '../CardForm/CardForm';
 import { useSelector } from 'react-redux';
-import { getFiltredCards } from '../../redux/store';
+import { getFiltredCards } from '../../redux/cardsRedux';
 
 const Column = props => {
 
     const cards = useSelector(state => getFiltredCards(state, props.id));
-    // console.log('Column cards:', cards);
-    // console.log('Column props:', props.id);
  
     return (
         <article className={styles.column}>

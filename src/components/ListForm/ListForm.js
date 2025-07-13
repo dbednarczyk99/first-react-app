@@ -3,7 +3,7 @@ import styles from './ListForm.module.scss';
 import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
-import { addList } from '../../redux/store';
+import { addList } from '../../redux/listRedux';
 
 const ColumnForm = props => {
     const [title, setTitle] = useState('');
@@ -27,7 +27,7 @@ const ColumnForm = props => {
                 <label htmlFor="description">Description:</label>
                 <TextInput type="text" value={description} onChange={e => setDescription(e.target.value)}/>
             </div>
-            <Button>Add column</Button>
+            <Button>Add list</Button>
         </form>
 	);
 };
